@@ -344,8 +344,8 @@ struct PipeServer
 				if (nWait == WAIT_OBJECT_0)
 				{
 					_ASSERTEX(mb_Terminate==true);
-					DWORD t1 = _GetTime();
-					TODO("Подозрение на длительную обработку");
+                    DWORD t1 = _GetTime();
+                    TODO("Suspicion long process");
 					PLOG("WaitOverlapped.Disconnect");
 					_Disconnect(pPipe, true, false);
 					PLOG("WaitOverlapped.Disconnect done");

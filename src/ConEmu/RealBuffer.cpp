@@ -6260,9 +6260,9 @@ short CRealBuffer::CheckProgressInConsole(const wchar_t* pszCurLine)
 	if (szPercentRus[0] == 0)
 	{
 		szPercentRus[0] = L' ';
-		TODO("Хорошо бы и другие национальные названия обрабатывать, брать из настройки");
-		MultiByteToWideChar(CP_ACP,0,"процент",-1,szPercentRus+1,countof(szPercentRus)-1);
-		MultiByteToWideChar(CP_ACP,0,"Завершено:",-1,szComplRus,countof(szComplRus));
+        TODO("Хорошо бы и другие национальные названия обрабатывать, брать из настройки");
+        lstrcpy(szPercentRus,L"процент");
+		lstrcpy(szComplRus,L"Завершено:");
 		
 		nPercentRusLen = lstrlen(szPercentRus);
 		nComplRusLen = lstrlen(szComplEng);
