@@ -1,4 +1,4 @@
-
+ï»¿
 /*
 Copyright (c) 2009-2012 Maximus5
 All rights reserved.
@@ -31,8 +31,8 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "MAssert.h"
 #include "MStrSafe.h"
 
-// Èñïîëüçóåòñÿ â ConEmuC.exe, è äëÿ ìèíèìèçàöèè êîäà
-// ìåíåäæåð ïàìÿòè òóò èñïîëüçîâàòüñÿ íå äîëæåí!
+// Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ÑÑ Ð² ConEmuC.exe, Ð¸ Ð´Ð»Ñ Ð¼Ð¸Ð½Ð¸Ð¼Ð¸Ð·Ð°Ñ†Ð¸Ð¸ ÐºÐ¾Ð´Ð°
+// Ð¼ÐµÐ½ÐµÐ´Ð¶ÐµÑ€ Ð¿Ð°Ð¼ÑÑ‚Ð¸ Ñ‚ÑƒÑ‚ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒÑÑ Ð½Ðµ Ð´Ð¾Ð»Ð¶ÐµÐ½!
 #undef malloc
 #define malloc "malloc"
 #undef calloc
@@ -93,8 +93,8 @@ LPCWSTR msprintf(LPWSTR lpOut, size_t cchOutMax, LPCWSTR lpFmt, ...)
 					char* pszValueA = va_arg( argptr, char* );
 					if (pszValueA)
 					{
-						// ïî õîðîøåìó, òóò áû MultiByteToWideChar çâàòü, íî
-						// ýòà âåòêà äîëæíà ïî èäåå òîëüêî äëÿ îòëàäêè èñïîëüçîâàòüñÿ
+						// Ð¿Ð¾ Ñ…Ð¾Ñ€Ð¾ÑˆÐµÐ¼Ñƒ, Ñ‚ÑƒÑ‚ Ð±Ñ‹ MultiByteToWideChar Ð·Ð²Ð°Ñ‚ÑŒ, Ð½Ð¾
+						// ÑÑ‚Ð° Ð²ÐµÑ‚ÐºÐ° Ð´Ð¾Ð»Ð¶Ð½Ð° Ð¿Ð¾ Ð¸Ð´ÐµÐµ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð´Ð»Ñ Ð¾Ñ‚Ð»Ð°Ð´ÐºÐ¸ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒÑÑ
 						while (*pszValueA)
 						{
 							*(pszDst++) = (wchar_t)*(pszValueA++);
@@ -134,7 +134,7 @@ LPCWSTR msprintf(LPWSTR lpOut, size_t cchOutMax, LPCWSTR lpFmt, ...)
 					}
 					if (pszValue == szValue)
 						*(pszValue++) = L'0';
-					// Òåïåðü ïåðåêèíóòü â szGuiPipeName
+					// Ð¢ÐµÐ¿ÐµÑ€ÑŒ Ð¿ÐµÑ€ÐµÐºÐ¸Ð½ÑƒÑ‚ÑŒ Ð² szGuiPipeName
 					while (pszValue > szValue)
 					{
 						*(pszDst++) = *(--pszValue);
@@ -201,7 +201,7 @@ LPCWSTR msprintf(LPWSTR lpOut, size_t cchOutMax, LPCWSTR lpFmt, ...)
 					{
 						pszValue = (szValue+nLen);
 					}
-					// Òåïåðü ïåðåêèíóòü â szGuiPipeName
+					// Ð¢ÐµÐ¿ÐµÑ€ÑŒ Ð¿ÐµÑ€ÐµÐºÐ¸Ð½ÑƒÑ‚ÑŒ Ð² szGuiPipeName
 					while (pszValue > szValue)
 					{
 						*(pszDst++) = *(--pszValue);
@@ -272,8 +272,8 @@ LPCSTR msprintf(LPSTR lpOut, size_t cchOutMax, LPCSTR lpFmt, ...)
 					char* pszValueA = va_arg( argptr, char* );
 					if (pszValueA)
 					{
-						// ïî õîðîøåìó, òóò áû MultiByteToWideChar çâàòü, íî
-						// ýòà âåòêà äîëæíà ïî èäåå òîëüêî äëÿ îòëàäêè èñïîëüçîâàòüñÿ
+						// Ð¿Ð¾ Ñ…Ð¾Ñ€Ð¾ÑˆÐµÐ¼Ñƒ, Ñ‚ÑƒÑ‚ Ð±Ñ‹ MultiByteToWideChar Ð·Ð²Ð°Ñ‚ÑŒ, Ð½Ð¾
+						// ÑÑ‚Ð° Ð²ÐµÑ‚ÐºÐ° Ð´Ð¾Ð»Ð¶Ð½Ð° Ð¿Ð¾ Ð¸Ð´ÐµÐµ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð´Ð»Ñ Ð¾Ñ‚Ð»Ð°Ð´ÐºÐ¸ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒÑÑ
 						while (*pszValueA)
 						{
 							*(pszDst++) = (char)*(pszValueA++);
@@ -313,7 +313,7 @@ LPCSTR msprintf(LPSTR lpOut, size_t cchOutMax, LPCSTR lpFmt, ...)
 					}
 					if (pszValue == szValue)
 						*(pszValue++) = '0';
-					// Òåïåðü ïåðåêèíóòü â szGuiPipeName
+					// Ð¢ÐµÐ¿ÐµÑ€ÑŒ Ð¿ÐµÑ€ÐµÐºÐ¸Ð½ÑƒÑ‚ÑŒ Ð² szGuiPipeName
 					while (pszValue > szValue)
 					{
 						*(pszDst++) = *(--pszValue);
@@ -372,7 +372,7 @@ LPCSTR msprintf(LPSTR lpOut, size_t cchOutMax, LPCSTR lpFmt, ...)
 					{
 						pszValue = (szValue+nLen);
 					}
-					// Òåïåðü ïåðåêèíóòü â szGuiPipeName
+					// Ð¢ÐµÐ¿ÐµÑ€ÑŒ Ð¿ÐµÑ€ÐµÐºÐ¸Ð½ÑƒÑ‚ÑŒ Ð² szGuiPipeName
 					while (pszValue > szValue)
 					{
 						*(pszDst++) = *(--pszValue);

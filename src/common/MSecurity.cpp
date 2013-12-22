@@ -1,4 +1,4 @@
-
+ï»¿
 /*
 Copyright (c) 2011 Maximus5
 All rights reserved.
@@ -78,7 +78,7 @@ protected:
 				GetVersionExW(&osv);
 				if ((osv.dwMajorVersion < 6)
 					|| ((osv.dwMajorVersion == 6) && (osv.dwMinorVersion == 0)))
-					continue; // â Vista è íèæå "KernelBase.dll" åùå íå áûëî
+					continue; // Ð² Vista Ð¸ Ð½Ð¸Ð¶Ðµ "KernelBase.dll" ÐµÑ‰Ðµ Ð½Ðµ Ð±Ñ‹Ð»Ð¾
 				mh_AdvApi = LoadLibrary(L"KernelBase.dll");
 			}
 			else
@@ -201,7 +201,7 @@ public:
 
 		m_NullSecurity.nLength = sizeof(m_NullSecurity);
 		m_NullSecurity.lpSecurityDescriptor = mp_NullDesc;
-		m_NullSecurity.bInheritHandle = FALSE; //111122 - óñòàíîâêà Inherit íà ïàéïû ïðèâîäèò ê íåïðèÿòíûì ðåçóëüòàòàì (õýíäë ïàéïà íå çàêðûâàåòñÿ)
+		m_NullSecurity.bInheritHandle = FALSE; //111122 - ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Inherit Ð½Ð° Ð¿Ð°Ð¹Ð¿Ñ‹ Ð¿Ñ€Ð¸Ð²Ð¾Ð´Ð¸Ñ‚ Ðº Ð½ÐµÐ¿Ñ€Ð¸ÑÑ‚Ð½Ñ‹Ð¼ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ð°Ð¼ (Ñ…ÑÐ½Ð´Ð» Ð¿Ð°Ð¹Ð¿Ð° Ð½Ðµ Ð·Ð°ÐºÑ€Ñ‹Ð²Ð°ÐµÑ‚ÑÑ)
 		lpSec = &m_NullSecurity;
 	wrap:
 		UnloadAdvApi();
@@ -221,7 +221,7 @@ public:
 		#endif
 
 		//#ifdef CONEMU_MINIMAL
-		//		// Âîçìîæíî, åñòü ïåðåìåííàÿ îêðóæåíèÿ CESECURITYNAME?
+		//		// Ð’Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾, ÐµÑÑ‚ÑŒ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð°Ñ Ð¾ÐºÑ€ÑƒÐ¶ÐµÐ½Ð¸Ñ CESECURITYNAME?
 		//		int nLen = 1024;
 		//		char* pszEncoded = (char*)calloc(1024,1);
 		//		if (!pszEncoded)
@@ -317,7 +317,7 @@ public:
 	//SetLocal:
 		m_LocalSecurity.nLength = sizeof(m_LocalSecurity);
 		m_LocalSecurity.lpSecurityDescriptor = mp_LocalDesc;
-		m_LocalSecurity.bInheritHandle = FALSE; //111122 - óñòàíîâêà Inherit íà ïàéïû ïðèâîäèò ê íåïðèÿòíûì ðåçóëüòàòàì (õýíäë ïàéïà íå çàêðûâàåòñÿ)
+		m_LocalSecurity.bInheritHandle = FALSE; //111122 - ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Inherit Ð½Ð° Ð¿Ð°Ð¹Ð¿Ñ‹ Ð¿Ñ€Ð¸Ð²Ð¾Ð´Ð¸Ñ‚ Ðº Ð½ÐµÐ¿Ñ€Ð¸ÑÑ‚Ð½Ñ‹Ð¼ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ð°Ð¼ (Ñ…ÑÐ½Ð´Ð» Ð¿Ð°Ð¹Ð¿Ð° Ð½Ðµ Ð·Ð°ÐºÑ€Ñ‹Ð²Ð°ÐµÑ‚ÑÑ)
 		lpSec = &m_LocalSecurity;
 	wrap:
 		UnloadAdvApi();
