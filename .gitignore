@@ -1,6 +1,14 @@
+*.exe
+*.lib
+*.dll
+*.exp
+*.map
+*.pdb
+*.t32
+*.t64
 *.suo
 *.sdf
 *.opensdf
 Debug/
-Release/
+x64/
 src/_VCBUILD/
